@@ -15,7 +15,7 @@ import argparse
 import imutils
 import cv2
 
-# construct the argument parse and parse the arguments
+# prepare the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-c", "--cascade", required=True,
                 help="path to where the face cascade resides")
