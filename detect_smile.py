@@ -4,8 +4,7 @@ __license__ = "Apache License 2.0"
 __version__ = "0.1"
 
 # USAGE
-# python detect_smile.py --cascade haarcascade_frontalface_default.xml \
-#	--model output/lenet.hdf5 
+# python detect_smile.py --cascade haarcascade_frontalface_default.xml --model output/lenet.hdf5 
 
 # import the necessary packages
 from tensorflow.keras.preprocessing.image import img_to_array
