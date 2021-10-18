@@ -45,8 +45,7 @@ class TrainingMonitor(BaseLogger):
             l.append(float(v))
             self.H[k] = l
 
-        # check to see if the training history should be serialized
-        # to file
+        # check to see if the training history should be serialized to file
         if self.jsonPath is not None:
             f = open(self.jsonPath, "w")
             f.write(json.dumps(self.H))
