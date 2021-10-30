@@ -6,21 +6,22 @@ __version__ = "0.1"
 # USAGE
 # python train_model.py --dataset ../datasets/SMILEsmileD --model output/lenet.hdf5
 
+import argparse
+import os
+
+import cv2
+import imutils
+import matplotlib.pyplot as plt
+import numpy as np
+from imutils import paths
+from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split
 # import the necessary packages
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.utils import to_categorical
-from lib.nn.conv import LeNet
-from imutils import paths
-import matplotlib.pyplot as plt
 
-import numpy as np
-import argparse
-import imutils
-import cv2
-import os
+from lib.nn.conv import LeNet
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
