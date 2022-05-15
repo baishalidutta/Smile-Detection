@@ -1,6 +1,6 @@
 # Smile Detection
 
-CNN model to detect smiles from people's faces
+Convolutional Neural Network (CNN) model to detect smiles from people's faces
 
 ## Developer
 
