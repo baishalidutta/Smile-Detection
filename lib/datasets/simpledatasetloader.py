@@ -50,5 +50,5 @@ class SimpleDatasetLoader:
                 print("[INFO] processed {}/{}".format(i + 1,
                                                       len(imagePaths)))
 
-        # return a tuple of the data and labels
+        # return a tuple containing the data and labels
         return (np.array(data), np.array(labels))
