@@ -8,9 +8,9 @@ from tensorflow.keras.preprocessing.image import img_to_array
 
 
 class ImageToArrayPreprocessor:
-    def __init__(self, dataFormat=None):
+    def __init__(self, data_format=None):
         # store the image data format
-        self.dataFormat = dataFormat
+        self.dataFormat = data_format
 
     def preprocess(self, image):
         # apply the Keras utility function that correctly rearranges
