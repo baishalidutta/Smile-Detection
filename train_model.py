@@ -25,9 +25,11 @@ from lib.nn.conv import LeNet
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-d", "--dataset", required=True,
+ap.add_argument("-d", "--dataset",
+                required=True,
                 help="path to input dataset of faces")
-ap.add_argument("-m", "--model", required=True,
+ap.add_argument("-m", "--model",
+                required=True,
                 help="path to output model")
 args = vars(ap.parse_args())
 
