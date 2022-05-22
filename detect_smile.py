@@ -78,10 +78,17 @@ while True:
 
         # display the label and bounding box rectangle on the output
         # frame
-        cv2.putText(frameClone, label, (fX, fY - 10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
-        cv2.rectangle(frameClone, (fX, fY), (fX + fW, fY + fH),
-                      (0, 0, 255), 2)
+        cv2.putText(frameClone,
+                    label,
+                    (fX, fY - 10),
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    0.45,
+                    (0, 0, 255), 2)
+        cv2.rectangle(frameClone,
+                      (fX, fY),
+                      (fX + fW, fY + fH),
+                      (0, 0, 255),
+                      2)
 
     # show our detected faces along with smiling/not smiling labels
     cv2.imshow("Face", frameClone)
