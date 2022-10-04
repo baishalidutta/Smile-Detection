@@ -6,13 +6,14 @@ __version__ = "0.1"
 # USAGE
 # python detect_smile.py --cascade haarcascade_frontalface_default.xml --model output/lenet.hdf5 
 
+import argparse
+
+import cv2
+import imutils
+import numpy as np
+from tensorflow.keras.models import load_model
 # import the necessary packages
 from tensorflow.keras.preprocessing.image import img_to_array
-from tensorflow.keras.models import load_model
-import numpy as np
-import argparse
-import imutils
-import cv2
 
 # prepare the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
